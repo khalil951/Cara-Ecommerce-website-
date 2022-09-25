@@ -1,0 +1,110 @@
+
+:root {
+  --primary-color: #088178;   
+}
+ 
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+.border-bottom{
+  outline: var(--primary-color);
+  outline-offset: 5px;
+}
+
+body {
+    background: #e3e6f3;
+    background: linear-gradient(to right, #e3e6f3, #fff);
+    position: relative;
+  }
+  
+.bg-image {
+    background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=660&q=1000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+#FormHeader{
+    font-weight: 700;
+    color: black;
+  }
+
+
+#FormHeader::first-letter{
+      color: var(--primary-color);
+  }
+
+
+#inquiry-input {
+    overflow: scroll;
+  }
+
+#inquiry-input fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+    outline: 1rem solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+legend {
+    font-size: 1.3rem !important; 
+    display: block;
+    margin: 0 0 5px !important;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+  }
+
+
+input:checked + label {
+  border: none;
+    outline: 2px solid var(--primary-color);
+}
+
+/*input[type="checkbox" i]:checked { 
+  cursor: pointer;
+}*/
+
+textarea {
+    height: 5rem !important;
+  }
+
+#submitButton{
+    background-color: var(--primary-color);
+    cursor: pointer ;
+  }
+
+
+  @media (max-width : 930px) {
+
+    main {
+      height: 90vh !important;
+    }
+
+
+    textarea {
+      height: 3rem !important;
+    }
+  }
+

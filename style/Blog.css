@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #088178;   
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' , sans-serif;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.navbar  {
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.masthead {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-preview:hover {
+    color: var(--primary-color) !important;
+}
+
+#X {
+    padding: 0 8px;
+}
+
+#X:hover {
+    background-color: #0085A1;
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width : 870px) {
+
+#mainNav .navbar-toggler {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar #logo {
+    top: 3rem;
+    left: 5rem;
+    margin: 10px 0;
+}
+#aboutLi {
+    margin-top: 20px;
+}
+
+}
+
+@media (max-width : 800px) {
+    .navbar #logo {
+        left: 4rem;
+    }
+}
+
+@media (max-width : 768px) {
+    .navbar #logo {
+        left: 7rem;
+    }
+}
+
+
+
+
+

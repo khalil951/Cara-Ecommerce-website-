@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #088178;   
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' , sans-serif;
+    font-size: 18px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .card {
+    padding: 20px;
+    position: relative;
+  }
+
+  
+  .card .card-text {
+    text-align: start;
+  }
+  
+  .card:hover {
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    margin: 2px 0;
+    transition:  ease;
+  }
+
+  .card img:hover {
+    border-top: 2px solid var(--primary-color);
+  }
+
+  li a {
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+  }
+
+
+.card-body a {
+    color: var(#088178)  !important;
+ }
+
+
+.custom-btn {
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+@media (max-width : 999px) {
+    
+    #navbarResponsive{
+        position: relative;
+    }
+
+    #navbarResponsive>a{
+        position: fixed;
+        top: 10px;
+        left:10px;
+    }
+
+    #navbarResponsive li a:first-child{
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 33px !important;
+        
+    }
+
+    small {
+        font-size: 28px !important;
+    }
+    
+    .card  {
+        width: 400px;
+        margin: 1rem;
+    }
+
+    .card:hover {
+        box-shadow: none;
+        margin:  0;
+        position: static;
+      }
+
+    .pagination{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width : 870px) {
+    .card  {
+        margin: .5rem;
+
+    }
+}
+
+@media (max-width : 830px) {
+    .row {
+        margin: 5rem;
+        position: relative;
+    }  
+
+    .row div {
+        display: inline-table;
+        left: 50%;
+        /* position error when you click */
+    }  
+}
+
+@media (max-width : 680px) {
+
+    .row div {
+        left: 30%;
+        /* position error when you click */
+    }  
+}
